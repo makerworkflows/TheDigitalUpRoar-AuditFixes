@@ -348,9 +348,8 @@ h3 {
   width: auto;
   max-width: 15rem;
   object-fit: contain;
-  opacity: 0.4;
+  opacity: 0.8;
   transition: all 0.3s ease;
-  filter: brightness(0);
 }
 
 .trusted-logo:hover {
@@ -358,7 +357,7 @@ h3 {
 }
 
 [data-theme="dark"] .trusted-logo {
-  filter: brightness(0) invert(1);
+  opacity: 1;
 }
 
 /* Tours Carousel */
