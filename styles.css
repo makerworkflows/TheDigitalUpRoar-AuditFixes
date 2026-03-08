@@ -354,11 +354,15 @@ h3 {
 }
 
 .trusted-logo:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+    opacity: 1;
 }
 
 [data-theme="dark"] .trusted-logo {
+  opacity: 0.8;
+  filter: grayscale(100%) invert(1);
+}
+
+[data-theme="dark"] .trusted-logo:hover {
   opacity: 1;
 }
 
