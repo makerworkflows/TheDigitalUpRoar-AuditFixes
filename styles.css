@@ -206,8 +206,13 @@ h3 {
   z-index: 100;
   padding: 1rem 0;
   transition: var(--transition);
-  background: rgba(5, 5, 10, 0.95);
+  background: transparent;
   backdrop-filter: blur(10px);
+  border-bottom: none;
+}
+
+.navbar.scrolled {
+  background: rgba(5, 5, 10, 0.85);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -258,6 +263,12 @@ h3 {
   color: #ffffff;
 }
 
+/* Force white text when scrolled regardless of theme because background goes dark */
+.navbar.scrolled .nav-links a:not(.btn),
+.navbar.scrolled .theme-toggle {
+  color: #ffffff !important;
+}
+
 .nav-links a.btn {
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
@@ -269,7 +280,7 @@ h3 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 120px; /* Accounts for stacked navbar on mobile */
+  padding-top: 180px; /* Accounts for stacked navbar on mobile */
   padding-bottom: 4rem;
 }
 
@@ -316,6 +327,39 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+/* Social Proof / Trusted By */
+.trusted-by {
+  padding: 2rem 0;
+  background: transparent;
+}
+
+.trusted-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.trusted-logo {
+  height: 50px;
+  width: auto;
+  max-width: 15rem;
+  object-fit: contain;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  filter: brightness(0);
+}
+
+.trusted-logo:hover {
+  opacity: 1;
+}
+
+[data-theme="dark"] .trusted-logo {
+  filter: brightness(0) invert(1);
 }
 
 /* Tours Carousel */
@@ -558,14 +602,10 @@ h3 {
   /* Navbar */
   .navbar {
     padding: 1.5rem 0;
-    background: transparent;
-    border-bottom: none;
   }
 
   .navbar.scrolled {
-    background: rgba(5, 5, 10, 0.85);
     padding: 1rem 0;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .nav-content {
@@ -585,15 +625,9 @@ h3 {
     font-size: 1rem;
   }
 
-  /* Force white text when scrolled regardless of theme because background goes dark */
-  .navbar.scrolled .nav-links a:not(.btn),
-  .navbar.scrolled .theme-toggle {
-    color: #ffffff !important;
-  }
-
   /* Hero */
   .hero {
-    padding-top: 80px;
+    padding-top: 180px;
   }
 
   .hero-text-wrapper {
