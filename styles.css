@@ -10,7 +10,7 @@
   --tertiary: #7b2cbf;
   --text-main: #ffffff;
   --text-muted: #a0a0ab;
-  --font-family: "Outfit", sans-serif;
+  --font-family: "Inter", sans-serif;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -20,11 +20,9 @@
   --border-color: rgba(0, 0, 0, 0.15);
   --primary: #d90043;
   --primary-glow: rgba(217, 0, 67, 0.4);
-  --secondary: #007bb5;
-  --secondary-glow: rgba(0, 123, 181, 0.4);
-  --tertiary: #5d2192;
   --text-main: #1a1a2e;
   --text-muted: #4b5563;
+  --font-family: "Inter", sans-serif;
 }
 
 * {
@@ -161,7 +159,7 @@ h3 {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--tertiary));
-  color: var(--text-main);
+  color: #ffffff !important;
   box-shadow: 0 4px 15px var(--primary-glow);
 }
 
@@ -450,6 +448,13 @@ h3 {
   padding: 2rem 1.5rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card .btn {
+  margin-top: auto;
 }
 
 .service-icon {

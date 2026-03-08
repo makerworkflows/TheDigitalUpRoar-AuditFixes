@@ -113,7 +113,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -265,21 +265,21 @@
           </p>
           <div class="trusted-logos">
             <img
-              src="tao.png"
+              src="assets/logos/tao.png"
               alt="TAO Group Hospitality"
               class="trusted-logo"
             />
             <img
-              src="50eggs.png"
+              src="assets/logos/50eggs.png"
               alt="50 Eggs Hospitality"
               class="trusted-logo"
             />
             <img
-              src="driscoll.png"
+              src="assets/logos/driscoll.png"
               alt="Driscoll Children's Hospital"
               class="trusted-logo"
             />
-            <img src="neuehouse.png" alt="NEUEHOUSE" class="trusted-logo" />
+            <img src="assets/logos/neuehouse.png" alt="NEUEHOUSE" class="trusted-logo" />
           </div>
         </div>
       </section>
@@ -870,9 +870,10 @@
           <div
             class="services-grid"
             style="
-              grid-template-columns: repeat(3, 1fr) !important;
-              display: flex;
-              flex-wrap: wrap;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              display: grid;
+              gap: 2rem;
+              align-items: stretch;
             "
           >
             <article
