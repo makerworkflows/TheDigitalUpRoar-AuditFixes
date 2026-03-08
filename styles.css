@@ -336,17 +336,17 @@ h3 {
 
 .trusted-logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: nowrap;
+  gap: 4rem;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .trusted-logo {
-  height: 50px;
+  height: 90px;
   width: auto;
-  max-width: 15rem;
+  max-width: 20rem;
   object-fit: contain;
   opacity: 0.8;
   transition: all 0.3s ease;
