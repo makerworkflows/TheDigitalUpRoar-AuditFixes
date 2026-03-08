@@ -248,9 +248,14 @@ h3 {
   transition: var(--transition);
 }
 
-[data-theme="dark"] .nav-links a:not(.btn) {
+.theme-toggle {
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .nav-links a:not(.btn),
+[data-theme="dark"] .theme-toggle {
   color: #ffffff;
-  opacity: 1;
 }
 
 .nav-links a.btn {
@@ -578,6 +583,12 @@ h3 {
 
   .nav-links a:not(.btn) {
     font-size: 1rem;
+  }
+
+  /* Force white text when scrolled regardless of theme because background goes dark */
+  .navbar.scrolled .nav-links a:not(.btn),
+  .navbar.scrolled .theme-toggle {
+    color: #ffffff !important;
   }
 
   /* Hero */
