@@ -348,12 +348,14 @@ h3 {
   width: auto;
   max-width: 20rem;
   object-fit: contain;
-  opacity: 0.8;
+  opacity: 0.5;
+  filter: grayscale(100%);
   transition: all 0.3s ease;
 }
 
 .trusted-logo:hover {
   opacity: 1;
+  filter: grayscale(0%);
 }
 
 [data-theme="dark"] .trusted-logo {
