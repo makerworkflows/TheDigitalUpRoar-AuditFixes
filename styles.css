@@ -265,7 +265,8 @@ h3 {
 
 /* Force white text when scrolled regardless of theme because background goes dark */
 .navbar.scrolled .nav-links a:not(.btn),
-.navbar.scrolled .theme-toggle {
+.navbar.scrolled .theme-toggle,
+.navbar.scrolled .nav-links a.btn-outline {
   color: #ffffff !important;
 }
 
