@@ -16,22 +16,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Simple Typewriter effect for main title hook
-    const typeEffect = document.querySelector('.type-effect');
-    if(typeEffect) {
-        const text = "digital agency à la carte";
-        typeEffect.textContent = '';
-        let i = 0;
-        
-        function typeWriter() {
-            if (i < text.length) {
-                typeEffect.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
+    // Dark/Light Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = themeToggle.querySelector('.sun-icon');
+    const moonIcon = themeToggle.querySelector('.moon-icon');
+    
+    // Check local storage or system preference
+    const currentTheme = localStorage.getItem('theme') || "dark";
+    
+    if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        if (sunIcon && moonIcon) {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
         }
-        
-        setTimeout(typeWriter, 1000); // Start after fade-in
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (sunIcon && moonIcon) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+    }
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'dark' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                if (sunIcon && moonIcon) {
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                }
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                if (sunIcon && moonIcon) {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                }
+            }
+        });
     }
 
     // Interactive 3D tilt effect on service cards (Desktop Only)
