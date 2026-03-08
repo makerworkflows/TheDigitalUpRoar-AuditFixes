@@ -148,22 +148,6 @@
           /></a>
         </div>
         <div style="display: flex; align-items: center; gap: 1rem">
-          <ul class="nav-links" style="margin-bottom: 0">
-            <li><a href="#tours">Get Started</a></li>
-            <li>
-              <a
-                href="#"
-                class="btn btn-outline"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                >Book A Meeting</a
-              >
-            </li>
-          </ul>
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -214,6 +198,22 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
+          <ul class="nav-links" style="margin-bottom: 0">
+            <li><a href="#tours">Get Started</a></li>
+            <li>
+              <a
+                href="#"
+                class="btn btn-outline"
+                onclick="
+                  Calendly.initPopupWidget({
+                    url: 'https://calendly.com/thedigitaluproar',
+                  });
+                  return false;
+                "
+                >Book A Meeting</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -274,10 +274,72 @@
               flex-wrap: wrap;
             "
           >
-            <img src="https://logo.clearbit.com/taogroup.com" alt="TAO Group Hospitality" style="height: 40px; opacity: 0.7; filter: grayscale(100%); transition: var(--transition);" onmouseover="this.style.opacity='1'; this.style.filter='grayscale(0%)'" onmouseout="this.style.opacity='0.7'; this.style.filter='grayscale(100%)'"/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/50_Eggs_Inc._Logo.png" alt="50 Eggs Hospitality" style="height: 40px; opacity: 0.7; filter: grayscale(100%) brightness(500%); transition: var(--transition);" onmouseover="this.style.opacity='1'; this.style.filter='grayscale(0%) brightness(100%)'" onmouseout="this.style.opacity='0.7'; this.style.filter='grayscale(100%) brightness(500%)'"/>
-            <img src="https://logo.clearbit.com/driscollchildrens.org" alt="Driscoll Children's Hospital" style="height: 50px; opacity: 0.7; filter: grayscale(100%); transition: var(--transition);" onmouseover="this.style.opacity='1'; this.style.filter='grayscale(0%)'" onmouseout="this.style.opacity='0.7'; this.style.filter='grayscale(100%)'"/>
-            <img src="https://logo.clearbit.com/neuehouse.com" alt="NEUEHOUSE" style="height: 35px; opacity: 0.7; filter: invert(1); transition: var(--transition);" onmouseover="this.style.opacity='1';" onmouseout="this.style.opacity='0.7';"/>
+            <img
+              src="https://logo.clearbit.com/taogroup.com"
+              alt="TAO Group Hospitality"
+              style="
+                height: 40px;
+                opacity: 0.7;
+                filter: grayscale(100%);
+                transition: var(--transition);
+              "
+              onmouseover="
+                this.style.opacity = '1';
+                this.style.filter = 'grayscale(0%)';
+              "
+              onmouseout="
+                this.style.opacity = '0.7';
+                this.style.filter = 'grayscale(100%)';
+              "
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/41/50_Eggs_Inc._Logo.png"
+              alt="50 Eggs Hospitality"
+              style="
+                height: 40px;
+                opacity: 0.7;
+                filter: grayscale(100%) brightness(500%);
+                transition: var(--transition);
+              "
+              onmouseover="
+                this.style.opacity = '1';
+                this.style.filter = 'grayscale(0%) brightness(100%)';
+              "
+              onmouseout="
+                this.style.opacity = '0.7';
+                this.style.filter = 'grayscale(100%) brightness(500%)';
+              "
+            />
+            <img
+              src="https://logo.clearbit.com/driscollchildrens.org"
+              alt="Driscoll Children's Hospital"
+              style="
+                height: 50px;
+                opacity: 0.7;
+                filter: grayscale(100%);
+                transition: var(--transition);
+              "
+              onmouseover="
+                this.style.opacity = '1';
+                this.style.filter = 'grayscale(0%)';
+              "
+              onmouseout="
+                this.style.opacity = '0.7';
+                this.style.filter = 'grayscale(100%)';
+              "
+            />
+            <img
+              src="https://logo.clearbit.com/neuehouse.com"
+              alt="NEUEHOUSE"
+              style="
+                height: 35px;
+                opacity: 0.7;
+                filter: invert(1);
+                transition: var(--transition);
+              "
+              onmouseover="this.style.opacity = '1'"
+              onmouseout="this.style.opacity = '0.7'"
+            />
           </div>
         </div>
       </section>
@@ -763,7 +825,11 @@
                   TAO Group Hospitality
                 </h3>
                 <p
-                  style="font-weight: 600; color: var(--text-main); margin-bottom: 1.5rem"
+                  style="
+                    font-weight: 600;
+                    color: var(--text-main);
+                    margin-bottom: 1.5rem;
+                  "
                 >
                   Flagship Venue: Marquee New York
                 </p>
@@ -869,7 +935,11 @@
                   50 Eggs Hospitality
                 </h3>
                 <p
-                  style="font-weight: 600; color: var(--text-main); margin-bottom: 1.5rem"
+                  style="
+                    font-weight: 600;
+                    color: var(--text-main);
+                    margin-bottom: 1.5rem;
+                  "
                 >
                   Flagship Venue: Chicaco Cut / Yardbird
                 </p>
