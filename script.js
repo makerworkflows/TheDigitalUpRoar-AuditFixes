@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Dynamically set current year in footer
-    const currentYearEl = document.getElementById('current-year');
-    if (currentYearEl) {
-        currentYearEl.textContent = new Date().getFullYear();
-    }
+    // Dynamically set current year in footer and any other class instances
+    const currentYearEls = document.querySelectorAll('.dynamic-year, #current-year');
+    currentYearEls.forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
 
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
