@@ -2,72 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>The Digital UpRoar | Virtual Tours & Digital Agency</title>
 
     <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="The Digital UpRoar | Virtual Tours & Digital Agency"
-    />
-    <meta
-      name="description"
-      content="The Digital UpRoar is a boutique digital agency specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation."
-    />
-    <meta
-      name="keywords"
-      content="Virtual Tours, Digital Agency, 360 Photography, Video Production, NFC Business Cards, TapGenie, NYC Virtual Tours"
-    />
+    <meta name="title" content="The Digital UpRoar | Virtual Tours & Digital Agency" />
+    <meta name="description" content="The Digital UpRoar is a boutique digital agency specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation." />
+    <meta name="keywords" content="Virtual Tours, Digital Agency, 360 Photography, Video Production, NFC Business Cards, TapGenie, NYC Virtual Tours" />
     <meta name="author" content="The Digital UpRoar" />
     <link rel="canonical" href="https://www.thedigitaluproar.com/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.thedigitaluproar.com/" />
-    <meta
-      property="og:title"
-      content="The Digital UpRoar | Virtual Tours & Digital Agency"
-    />
-    <meta
-      property="og:description"
-      content="Specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation."
-    />
-    <meta
-      property="og:image"
-      content="https://www.thedigitaluproar.com/social-preview.jpg"
-    />
+    <meta property="og:title" content="The Digital UpRoar | Virtual Tours & Digital Agency" />
+    <meta property="og:description" content="Specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation." />
+    <meta property="og:image" content="https://makerworkflows.github.io/TheDigitalUpRoar-AuditFixes/DigitalUproarLogo_final.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.thedigitaluproar.com/" />
-    <meta
-      property="twitter:title"
-      content="The Digital UpRoar | Virtual Tours & Digital Agency"
-    />
-    <meta
-      property="twitter:description"
-      content="Specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation."
-    />
+    <meta property="twitter:title" content="The Digital UpRoar | Virtual Tours & Digital Agency" />
+    <meta property="twitter:description" content="Specializing in Virtual Tours, Video Production, Custom Digital Business Cards, and Content Creation." />
+    <meta property="twitter:image" content="https://makerworkflows.github.io/TheDigitalUpRoar-AuditFixes/DigitalUproarLogo_final.png" />
 
     <!-- Google Site Verification (GSC Placeholder) -->
-    <meta
-      name="google-site-verification"
-      content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TAG_HERE"
-    />
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TAG_HERE" />
 
     <!-- Google Analytics (GA4) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
       gtag("config", "G-YOUR_MEASUREMENT_ID");
     </script>
@@ -96,9 +64,7 @@
           {
             "@type": "Service",
             "serviceType": "Virtual Tours",
-            "provider": {
-              "@id": "https://www.thedigitaluproar.com/"
-            },
+            "provider": { "@id": "https://www.thedigitaluproar.com/" },
             "areaServed": [
               { "@type": "City", "name": "Austin" },
               { "@type": "City", "name": "New York City" }
@@ -112,749 +78,236 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Calendly Widget (Placeholder script) -->
-    <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-      async
-    ></script>
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </head>
   <body>
-    <!-- Background Animation Elements -->
-    <div class="glow-orb orb-1" aria-hidden="true"></div>
-    <div class="glow-orb orb-2" aria-hidden="true"></div>
-    <div class="glow-orb orb-3" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container nav-content">
-        <div class="logo">
-          <a href="#home"
-            ><img
-              src="DigitalUproarLogo_final.png"
-              alt="The Digital UpRoar Logo"
-              style="height: 140px; display: block"
-          /></a>
-        </div>
-        <div style="display: flex; align-items: center; gap: 1rem">
-          <button
-            id="theme-toggle"
-            class="theme-toggle"
-            aria-label="Toggle Dark/Light Mode"
-            style="
-              background: transparent;
-              border: none;
-              cursor: pointer;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 0.5rem;
-            "
-          >
-            <svg
-              class="sun-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="display: none; width: 20px; height: 20px"
-            >
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg
-              class="moon-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="width: 20px; height: 20px"
-            >
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-          <ul class="nav-links" style="margin-bottom: 0">
-            <li><a href="#tours">Get Started</a></li>
-            <li>
-              <a
-                href="#"
-                class="btn btn-outline"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                >Book A Call</a
-              >
-            </li>
-          </ul>
-        </div>
+        <a href="#home">
+          <img src="DigitalUproarLogo_final.png" alt="The Digital UpRoar" style="height: 60px; display: block" />
+        </a>
+        <ul class="nav-links" style="margin-bottom: 0">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li>
+            <a href="#" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;">
+              Book A Call
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <main>
-      <!-- Hero Section -->
+      <!-- Hero -->
       <header class="hero" id="home">
         <div class="container hero-content">
-          <div class="hero-text-wrapper glass-panel">
-            <h1 class="main-title slide-up">
-              Let the World Walk Through Your Business — From Anywhere.
-            </h1>
-            <p class="quote fade-in-delay" style="font-style: normal">
-              Immersive virtual tours, video content, and digital tools for
-              hospitality, retail, and entertainment brands. Trusted by TAO
-              Group, 50 Eggs Hospitality, and Driscoll Children's Hospital.
-            </p>
-            <div class="hero-ctas fade-in-delay">
-              <a
-                href="#"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                class="btn btn-primary"
-                >Book a Free Strategy Call</a
-              >
-              <a href="#tours" class="btn btn-secondary">See Our Work</a>
-            </div>
+          <div class="hero-label">Virtual Tours & Digital Agency</div>
+          <h1 class="main-title slide-up">
+            Let the World Walk Through<br>Your Business.
+          </h1>
+          <p class="hero-desc fade-in-delay">
+            Immersive virtual tours, video content, and digital tools for hospitality, retail, and entertainment brands. Trusted by TAO Group, 50 Eggs Hospitality, and Driscoll Children's Hospital.
+          </p>
+          <div class="hero-ctas fade-in-delay">
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;" class="btn btn-primary lg">
+              Book a Free Strategy Call
+            </a>
+            <a href="#tours" class="btn btn-secondary lg">See Our Work</a>
           </div>
         </div>
       </header>
 
-      <!-- Trusted By Section -->
-      <section class="trusted-by fade-in-delay" style="padding: 2rem 0">
+      <!-- Trusted By -->
+      <section class="trusted-by fade-in-delay">
         <div class="container">
-          <p
-            class="section-label text-center"
-            style="
-              font-size: 0.9rem;
-              text-transform: uppercase;
-              letter-spacing: 2px;
-              color: var(--text-muted);
-              margin-bottom: 1.5rem;
-            "
-          >
+          <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
             Trusted By Industry Leaders
           </p>
           <div class="trusted-logos">
-            <img
-              src="assets/logos/tao.png"
-              alt="TAO Group Hospitality"
-              class="trusted-logo"
-            />
-            <img
-              src="assets/logos/50eggs.png"
-              alt="50 Eggs Hospitality"
-              class="trusted-logo"
-            />
-            <img
-              src="assets/logos/driscoll.png"
-              alt="Driscoll Children's Hospital"
-              class="trusted-logo"
-            />
-            <img src="assets/logos/neuehouse.png" alt="NEUEHOUSE" class="trusted-logo" />
+            <img src="assets/logos/tao.png" alt="TAO Group Hospitality" class="trusted-logo" />
+            <img src="assets/logos/neuehouse_n.png" alt="NEUEHOUSE" class="trusted-logo" />
+            <img src="assets/logos/Driscoll_web.webp" alt="Driscoll Children's Hospital" class="trusted-logo driscoll-logo" />
+            <img src="assets/logos/50eggs.png" alt="50 Eggs Hospitality" class="trusted-logo" />
           </div>
         </div>
       </section>
 
-      <!-- Recent Tours Carousel Section -->
+      <!-- Recent Tours -->
       <section class="tours" id="tours">
         <div class="container">
-          <h2 class="section-title text-center">Recent Tours</h2>
+          <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Recent Tours</h2>
+          </div>
           <div class="carousel-container">
-            <button
-              class="carousel-btn prev"
-              aria-label="Previous Tour"
-              id="prev-tour"
-            >
-              ❮
-            </button>
+            <button class="carousel-btn prev" aria-label="Previous" id="prev-tour">&lsaquo;</button>
             <div class="carousel-track" id="carousel-track">
-              <!-- Tour Item 1 -->
-              <article class="carousel-card glass-panel">
-                <div
-                  class="tour-image placeholder-image modern-gradient-1"
-                ></div>
+              <article class="carousel-card">
+                <div class="tour-image placeholder-image modern-gradient-1"></div>
                 <div class="tour-info">
                   <h3>Luxury Hotel Tour</h3>
-                  <p>
-                    Interactive 360° walkthrough for premium hospitality venues.
-                    Step inside and explore.
-                  </p>
+                  <p>Interactive 360 walkthrough for premium hospitality venues. Step inside and explore.</p>
                 </div>
               </article>
-              <!-- Tour Item 2 -->
-              <article class="carousel-card glass-panel">
-                <div
-                  class="tour-image placeholder-image modern-gradient-2"
-                ></div>
+              <article class="carousel-card">
+                <div class="tour-image placeholder-image modern-gradient-2"></div>
                 <div class="tour-info">
                   <h3>Event Center Showcase</h3>
-                  <p>
-                    Immersive venue exploration with hotspot integrations to
-                    boost bookings.
-                  </p>
+                  <p>Immersive venue exploration with hotspot integrations to boost bookings.</p>
                 </div>
               </article>
-              <!-- Tour Item 3 -->
-              <article class="carousel-card glass-panel">
-                <div
-                  class="tour-image placeholder-image modern-gradient-3"
-                ></div>
+              <article class="carousel-card">
+                <div class="tour-image placeholder-image modern-gradient-3"></div>
                 <div class="tour-info">
                   <h3>Wonderland Dreams</h3>
-                  <p>
-                    Interactive art exhibit captured in high-resolution 360°.
-                    Dive into the experience.
-                  </p>
+                  <p>Interactive art exhibit captured in high-resolution 360. Dive into the experience.</p>
                 </div>
               </article>
-              <!-- Tour Item 4 (for testing scrolling) -->
-              <article class="carousel-card glass-panel">
-                <div
-                  class="tour-image placeholder-image modern-gradient-1"
-                ></div>
+              <article class="carousel-card">
+                <div class="tour-image placeholder-image modern-gradient-1"></div>
                 <div class="tour-info">
                   <h3>360 New Yorker</h3>
-                  <p>
-                    Capturing the greatest city in the world in all its
-                    beautiful 360 degree glory.
-                  </p>
+                  <p>Capturing the greatest city in the world in all its beautiful 360-degree glory.</p>
                 </div>
               </article>
             </div>
-            <button
-              class="carousel-btn next"
-              aria-label="Next Tour"
-              id="next-tour"
-            >
-              ❯
-            </button>
+            <button class="carousel-btn next" aria-label="Next" id="next-tour">&rsaquo;</button>
           </div>
         </div>
       </section>
 
-      <!-- Services Section -->
+      <!-- Services -->
       <section class="services" id="services">
         <div class="container">
-          <h2 class="section-title text-center">Core Capabilities</h2>
+          <div class="section-header">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Core Capabilities</h2>
+            <p class="section-subtitle">
+              Four focused services, each built for brands that need to be seen, explored, and remembered.
+            </p>
+          </div>
           <div class="services-grid">
-            <article class="service-card glass-panel interactive">
-              <div class="service-icon" aria-hidden="true">👓</div>
-              <h3>Virtual Tours (Our Specialty)</h3>
+            <article class="service-card">
+              <div class="service-icon">&#128083;</div>
+              <h3>Virtual Tours</h3>
               <p>
-                Immersive 360-degree digital twins that let prospects explore
-                your physical space from anywhere. We build everything from
-                streamlined walkthroughs for real estate to ultra-premium,
-                hotspot-rigged tours integrated with booking engines and digital
-                menus for multi-level hospitality venues.
+                Immersive 360-degree digital twins that let prospects explore your physical space from anywhere. From streamlined walkthroughs for real estate to ultra-premium, hotspot-rigged tours integrated with booking engines and digital menus.
               </p>
             </article>
-            <article class="service-card glass-panel interactive">
-              <div class="service-icon" aria-hidden="true">📲</div>
-              <h3>DigiBiz / TapGenie</h3>
+            <article class="service-card">
+              <div class="service-icon">&#128242;</div>
+              <h3>TapGenie</h3>
               <p>
-                Custom digital business cards powered by NFC technology. We
-                build dedicated profile splash pages that act as a centralized
-                hub for your contact info, social links, and portfolio. Trusted
-                by leading executives, state commissioners, and entertainers.
+                Custom digital business cards powered by NFC technology. Dedicated profile splash pages that act as a centralized hub for contact info, social links, and portfolio. Trusted by executives, commissioners, and entertainers.
               </p>
             </article>
-            <article class="service-card glass-panel interactive">
-              <div class="service-icon" aria-hidden="true">🎥</div>
+            <article class="service-card">
+              <div class="service-icon">&#127909;</div>
               <h3>Video Production</h3>
               <p>
-                High-energy visual storytelling. We capture the true atmosphere
-                of your venue through dynamic POV walkthroughs, drone footage,
-                8K 360-degree video, and short-form social media series designed
-                specifically for TikTok and Instagram Reels.
+                High-energy visual storytelling. Dynamic POV walkthroughs, drone footage, 8K 360-degree video, and short-form social media series designed for TikTok and Instagram Reels.
               </p>
             </article>
-            <article class="service-card glass-panel interactive">
-              <div class="service-icon" aria-hidden="true">✨</div>
+            <article class="service-card">
+              <div class="service-icon">&#10024;</div>
               <h3>Graphic Design</h3>
               <p>
-                Through our exclusive partnership with UNMXD, we offer premium
-                brand identity, digital assets, and high-impact graphic design
-                services that ensure your visual collateral matches the quality
-                of your physical space.
+                Through our partnership with UNMXD, we offer premium brand identity, digital assets, and high-impact graphic design that ensures your visual collateral matches the quality of your physical space.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Industries We Serve Section -->
-      <section
-        class="industries"
-        id="industries"
-        style="
-          padding: 4rem 0;
-          background: rgba(255, 255, 255, 0.02);
-          border-top: 1px solid var(--border-color);
-          border-bottom: 1px solid var(--border-color);
-        "
-      >
+      <!-- Industries -->
+      <section id="industries" style="background: var(--bg-deep); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
         <div class="container">
-          <h2 class="section-title text-center">Industries We Dominate</h2>
-          <div
-            style="
-              display: flex;
-              gap: 2rem;
-              overflow-x: auto;
-              padding: 1rem 0;
-              scroll-snap-type: x mandatory;
-            "
-          >
-            <div
-              class="glass-panel"
-              style="flex: 0 0 300px; padding: 2rem; scroll-snap-align: start"
-            >
-              <h3 style="color: var(--primary); margin-bottom: 1rem">
-                Hotels & Resorts
-              </h3>
-              <p style="font-size: 0.95rem; color: var(--text-muted)">
-                Increase direct bookings by allowing guests to virtually walk
-                the property, inspect room layouts, and explore amenities before
-                clicking 'Reserve'.
-              </p>
+          <div class="section-header">
+            <span class="section-label">Verticals</span>
+            <h2 class="section-title">Industries We Serve</h2>
+          </div>
+          <div class="industries-scroll">
+            <div class="industry-card">
+              <h3>Hotels & Resorts</h3>
+              <p>Increase direct bookings by allowing guests to virtually walk the property, inspect room layouts, and explore amenities before clicking 'Reserve'.</p>
             </div>
-            <div
-              class="glass-panel"
-              style="flex: 0 0 300px; padding: 2rem; scroll-snap-align: start"
-            >
-              <h3 style="color: var(--secondary); margin-bottom: 1rem">
-                Nightclubs & Bars
-              </h3>
-              <p style="font-size: 0.95rem; color: var(--text-muted)">
-                Drive VIP table reservations by showcasing the exact location,
-                sightlines, and scale of bottle service areas within your floor
-                plan.
-              </p>
+            <div class="industry-card">
+              <h3>Nightclubs & Bars</h3>
+              <p>Drive VIP table reservations by showcasing the exact location, sightlines, and scale of bottle service areas within your floor plan.</p>
             </div>
-            <div
-              class="glass-panel"
-              style="flex: 0 0 300px; padding: 2rem; scroll-snap-align: start"
-            >
-              <h3 style="color: var(--tertiary); margin-bottom: 1rem">
-                Restaurants
-              </h3>
-              <p style="font-size: 0.95rem; color: var(--text-muted)">
-                Embed your dining menus directly into interactive hotspots
-                overlaid on a stunning 360-view of your main dining room and
-                private event spaces.
-              </p>
+            <div class="industry-card">
+              <h3>Restaurants</h3>
+              <p>Embed dining menus directly into interactive hotspots overlaid on a stunning 360-view of your main dining room and private event spaces.</p>
             </div>
-            <div
-              class="glass-panel"
-              style="flex: 0 0 300px; padding: 2rem; scroll-snap-align: start"
-            >
-              <h3 style="color: var(--primary); margin-bottom: 1rem">
-                Event Centers
-              </h3>
-              <p style="font-size: 0.95rem; color: var(--text-muted)">
-                Accelerate corporate bookings by providing event planners with
-                an immersive tool that proves your venue's capacity, A/V
-                capabilities, and flow.
-              </p>
+            <div class="industry-card">
+              <h3>Event Centers</h3>
+              <p>Accelerate corporate bookings by providing event planners with an immersive tool that proves your venue's capacity, A/V capabilities, and flow.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ROI & FAQ Section -->
-      <section class="faq" id="faq" style="padding: 4rem 0">
+      <!-- Case Studies -->
+      <section class="case-studies" id="case-studies">
         <div class="container">
-          <div style="max-width: 800px; margin: 0 auto">
-            <h2 class="section-title text-center">
-              Frequently Asked Questions
-            </h2>
-            <div style="display: flex; flex-direction: column; gap: 1rem">
-              <details
-                class="glass-panel"
-                style="padding: 1.5rem; cursor: pointer"
-              >
-                <summary
-                  style="
-                    font-weight: 600;
-                    font-size: 1.1rem;
-                    list-style: none;
-                    position: relative;
-                  "
-                >
-                  How much does a virtual tour cost?
-                  <span
-                    style="position: absolute; right: 0; color: var(--primary)"
-                    >+</span
-                  >
-                </summary>
-                <p
-                  style="
-                    margin-top: 1rem;
-                    color: var(--text-muted);
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                  "
-                >
-                  Our tours start at $999 for standard spaces under 2,000 square
-                  feet. For larger hospitality venues requiring interactive
-                  hotspots, custom menus, and lead generation forms, pricing
-                  typically ranges from $1,999 to $4,500 based on square footage
-                  and technical requirements.
-                </p>
-              </details>
-              <details
-                class="glass-panel"
-                style="padding: 1.5rem; cursor: pointer"
-              >
-                <summary
-                  style="
-                    font-weight: 600;
-                    font-size: 1.1rem;
-                    list-style: none;
-                    position: relative;
-                  "
-                >
-                  How long does the shoot take?
-                  <span
-                    style="position: absolute; right: 0; color: var(--primary)"
-                    >+</span
-                  >
-                </summary>
-                <p
-                  style="
-                    margin-top: 1rem;
-                    color: var(--text-muted);
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                  "
-                >
-                  Most venue shoots take between 2 to 4 hours on-site. We
-                  specialize in hospitality and understand the need to shoot
-                  around operating hours, minimizing disruption to your staff
-                  and guests.
-                </p>
-              </details>
-              <details
-                class="glass-panel"
-                style="padding: 1.5rem; cursor: pointer"
-              >
-                <summary
-                  style="
-                    font-weight: 600;
-                    font-size: 1.1rem;
-                    list-style: none;
-                    position: relative;
-                  "
-                >
-                  Where is the tour hosted?
-                  <span
-                    style="position: absolute; right: 0; color: var(--primary)"
-                    >+</span
-                  >
-                </summary>
-                <p
-                  style="
-                    margin-top: 1rem;
-                    color: var(--text-muted);
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                  "
-                >
-                  Your tour is hosted on secure, high-speed cloud servers to
-                  ensure lightning-fast loading everywhere. We provide you with
-                  a simple iframe embed code to place on your website, and we
-                  can also push the tour directly to your Google Business
-                  Profile for immediate local SEO impact.
-                </p>
-              </details>
-              <details
-                class="glass-panel"
-                style="padding: 1.5rem; cursor: pointer"
-              >
-                <summary
-                  style="
-                    font-weight: 600;
-                    font-size: 1.1rem;
-                    list-style: none;
-                    position: relative;
-                  "
-                >
-                  Can we update menus or content later?
-                  <span
-                    style="position: absolute; right: 0; color: var(--primary)"
-                    >+</span
-                  >
-                </summary>
-                <p
-                  style="
-                    margin-top: 1rem;
-                    color: var(--text-muted);
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                  "
-                >
-                  Yes! The physical scan of your space remains permanent, but
-                  any digital information overlays—such as PDF menus, booking
-                  links, or video pop-ups—can be updated by our team at any time
-                  without needing to reshoot the venue.
-                </p>
-              </details>
-            </div>
+          <div class="section-header">
+            <span class="section-label">Results</span>
+            <h2 class="section-title">Case Studies</h2>
           </div>
-        </div>
-      </section>
-
-      <!-- Case Studies Section -->
-      <section class="case-studies" id="case-studies" style="padding: 4rem 0">
-        <div class="container">
-          <h2 class="section-title text-center">Case Studies</h2>
-          <div
-            class="services-grid"
-            style="grid-template-columns: repeat(2, 1fr)"
-          >
-            <article
-              class="service-card glass-panel"
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-              "
-            >
-              <div>
-                <h3
-                  style="
-                    font-size: 1.8rem;
-                    margin-bottom: 0.5rem;
-                    color: var(--primary);
-                  "
-                >
-                  TAO Group Hospitality
-                </h3>
-                <p
-                  style="
-                    font-weight: 600;
-                    color: var(--text-main);
-                    margin-bottom: 1.5rem;
-                  "
-                >
-                  Flagship Venue: Marquee New York
-                </p>
-                <div
-                  style="
-                    background: var(--surface-color);
-                    padding: 1.5rem;
-                    border-radius: 8px;
-                    margin-bottom: 1.5rem;
-                  "
-                >
-                  <h4
-                    style="
-                      color: var(--text-muted);
-                      font-size: 0.9rem;
-                      text-transform: uppercase;
-                      margin-bottom: 0.5rem;
-                    "
-                  >
-                    The Challenge
-                  </h4>
-                  <p style="font-size: 0.95rem; margin-bottom: 1rem">
-                    Out-of-state corporate event planners struggled to
-                    understand the multi-level scale and VIP configurations of
-                    Marquee NYC through standard photos alone.
-                  </p>
-                  <h4
-                    style="
-                      color: var(--text-muted);
-                      font-size: 0.9rem;
-                      text-transform: uppercase;
-                      margin-bottom: 0.5rem;
-                    "
-                  >
-                    Our Solution
-                  </h4>
-                  <p style="font-size: 0.95rem">
-                    Created a fully interactive 360° digital twin with 45 custom
-                    hotspots detailing A/V capabilities, capacity limits, and
-                    VIP table layouts.
-                  </p>
+          <div class="case-studies-grid">
+            <article class="case-card">
+              <h3>TAO Group Hospitality</h3>
+              <p class="case-venue">Flagship Venue: Marquee New York</p>
+              <p class="case-section-label">The Challenge</p>
+              <p class="case-text">
+                Out-of-state corporate event planners struggled to understand the multi-level scale and VIP configurations of Marquee NYC through standard photos alone.
+              </p>
+              <p class="case-section-label">Our Solution</p>
+              <p class="case-text">
+                Created a fully interactive 360 digital twin with 45 custom hotspots detailing A/V capabilities, capacity limits, and VIP table layouts.
+              </p>
+              <div class="case-metrics">
+                <div class="metric">
+                  <span class="metric-value">+32%</span>
+                  <span class="metric-label">Event Inquiries</span>
                 </div>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-around;
-                    text-align: center;
-                    margin-bottom: 1.5rem;
-                    border-top: 1px solid var(--border-color);
-                    border-bottom: 1px solid var(--border-color);
-                    padding: 1rem 0;
-                  "
-                >
-                  <div>
-                    <span
-                      style="
-                        display: block;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        color: var(--secondary);
-                      "
-                      >+32%</span
-                    >
-                    <span style="font-size: 0.8rem; color: var(--text-muted)"
-                      >Event Inquiries</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      style="
-                        display: block;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        color: var(--secondary);
-                      "
-                      >-40%</span
-                    >
-                    <span style="font-size: 0.8rem; color: var(--text-muted)"
-                      >Site Visit Reliance</span
-                    >
-                  </div>
+                <div class="metric">
+                  <span class="metric-value">-40%</span>
+                  <span class="metric-label">Site Visit Reliance</span>
                 </div>
               </div>
               <a href="#tours" class="btn btn-outline">View The Tour</a>
             </article>
 
-            <article
-              class="service-card glass-panel"
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-              "
-            >
-              <div>
-                <h3
-                  style="
-                    font-size: 1.8rem;
-                    margin-bottom: 0.5rem;
-                    color: var(--tertiary);
-                  "
-                >
-                  50 Eggs Hospitality
-                </h3>
-                <p
-                  style="
-                    font-weight: 600;
-                    color: var(--text-main);
-                    margin-bottom: 1.5rem;
-                  "
-                >
-                  Flagship Venue: Chicaco Cut / Yardbird
-                </p>
-                <div
-                  style="
-                    background: var(--surface-color);
-                    padding: 1.5rem;
-                    border-radius: 8px;
-                    margin-bottom: 1.5rem;
-                  "
-                >
-                  <h4
-                    style="
-                      color: var(--text-muted);
-                      font-size: 0.9rem;
-                      text-transform: uppercase;
-                      margin-bottom: 0.5rem;
-                    "
-                  >
-                    The Challenge
-                  </h4>
-                  <p style="font-size: 0.95rem; margin-bottom: 1rem">
-                    Private dining spaces were under-booked because the physical
-                    separation from the main restaurant floor was difficult to
-                    convey in PDF brochures.
-                  </p>
-                  <h4
-                    style="
-                      color: var(--text-muted);
-                      font-size: 0.9rem;
-                      text-transform: uppercase;
-                      margin-bottom: 0.5rem;
-                    "
-                  >
-                    Our Solution
-                  </h4>
-                  <p style="font-size: 0.95rem">
-                    Delivered high-definition virtual tours of private dining
-                    rooms integrated directly into their event booking platform
-                    with embedded menus.
-                  </p>
+            <article class="case-card">
+              <h3>50 Eggs Hospitality</h3>
+              <p class="case-venue">Flagship Venue: Chicago Cut / Yardbird</p>
+              <p class="case-section-label">The Challenge</p>
+              <p class="case-text">
+                Private dining spaces were under-booked because the physical separation from the main restaurant floor was difficult to convey in PDF brochures.
+              </p>
+              <p class="case-section-label">Our Solution</p>
+              <p class="case-text">
+                Delivered high-definition virtual tours of private dining rooms integrated directly into their event booking platform with embedded menus.
+              </p>
+              <div class="case-metrics">
+                <div class="metric">
+                  <span class="metric-value">2.5x</span>
+                  <span class="metric-label">Time on Page</span>
                 </div>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-around;
-                    text-align: center;
-                    margin-bottom: 1.5rem;
-                    border-top: 1px solid var(--border-color);
-                    border-bottom: 1px solid var(--border-color);
-                    padding: 1rem 0;
-                  "
-                >
-                  <div>
-                    <span
-                      style="
-                        display: block;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        color: var(--secondary);
-                      "
-                      >2.5x</span
-                    >
-                    <span style="font-size: 0.8rem; color: var(--text-muted)"
-                      >Time on Page</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      style="
-                        display: block;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        color: var(--secondary);
-                      "
-                      >+18%</span
-                    >
-                    <span style="font-size: 0.8rem; color: var(--text-muted)"
-                      >Private Bookings</span
-                    >
-                  </div>
+                <div class="metric">
+                  <span class="metric-value">+18%</span>
+                  <span class="metric-label">Private Bookings</span>
                 </div>
               </div>
               <a href="#tours" class="btn btn-outline">View The Tour</a>
@@ -863,201 +316,139 @@
         </div>
       </section>
 
-      <!-- Pricing Section -->
-      <section class="pricing" id="pricing" style="padding: 4rem 0">
+      <!-- FAQ -->
+      <section id="faq" style="background: var(--bg-deep); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
         <div class="container">
-          <h2 class="section-title text-center">Transparent Pricing</h2>
-          <div
-            class="services-grid"
-            style="
-              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-              display: grid;
-              gap: 2rem;
-              align-items: stretch;
-            "
-          >
-            <article
-              class="service-card glass-panel interactive text-center"
-              style="flex: 1 1 300px"
-            >
+          <div class="section-header text-center">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                How much does a virtual tour cost?
+                <span class="faq-toggle">+</span>
+              </summary>
+              <p>Our tours start at $999 for standard spaces under 2,000 square feet. For larger hospitality venues requiring interactive hotspots, custom menus, and lead generation forms, pricing typically ranges from $1,999 to $4,500 based on square footage and technical requirements.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                How long does the shoot take?
+                <span class="faq-toggle">+</span>
+              </summary>
+              <p>Most venue shoots take between 2 to 4 hours on-site. We specialize in hospitality and understand the need to shoot around operating hours, minimizing disruption to your staff and guests.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                Where is the tour hosted?
+                <span class="faq-toggle">+</span>
+              </summary>
+              <p>Your tour is hosted on secure, high-speed cloud servers to ensure lightning-fast loading everywhere. We provide you with a simple iframe embed code to place on your website, and we can also push the tour directly to your Google Business Profile for immediate local SEO impact.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                Can we update menus or content later?
+                <span class="faq-toggle">+</span>
+              </summary>
+              <p>Yes! The physical scan of your space remains permanent, but any digital information overlays -- such as PDF menus, booking links, or video pop-ups -- can be updated by our team at any time without needing to reshoot the venue.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title">Transparent Pricing</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">No surprise invoices. Fixed pricing tailored to your space.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card">
               <h3>Standard Virtual Tour</h3>
-              <p
-                class="lead"
-                style="
-                  font-size: 2rem;
-                  color: var(--primary);
-                  font-weight: 800;
-                  margin: 1rem 0;
-                "
-              >
-                From $999
-              </p>
-              <ul class="feature-list" style="text-align: left">
+              <div class="pricing-amount">From $999</div>
+              <ul class="feature-list">
                 <li>Up to 2,000 sq ft</li>
                 <li>4K Resolution Processing</li>
                 <li>Google Maps Integration</li>
               </ul>
-              <a
-                href="#"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                class="btn btn-outline"
-                style="margin-top: 1.5rem"
-                >Get Started</a
-              >
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;" class="btn btn-outline">
+                Get Started
+              </a>
             </article>
-            <article
-              class="service-card glass-panel interactive text-center"
-              style="border-color: var(--secondary); flex: 1 1 300px"
-            >
+            <article class="pricing-card featured">
               <h3>Premium with Hotspots</h3>
-              <p
-                class="lead"
-                style="
-                  font-size: 2rem;
-                  color: var(--secondary);
-                  font-weight: 800;
-                  margin: 1rem 0;
-                "
-              >
-                From $1,999
-              </p>
-              <ul class="feature-list" style="text-align: left">
+              <div class="pricing-amount" style="color: var(--secondary);">From $1,999</div>
+              <ul class="feature-list">
                 <li>Up to 5,000 sq ft</li>
                 <li>Interactive Info Hotspots</li>
                 <li>Lead Generation Forms</li>
                 <li>Custom Menu Integration</li>
               </ul>
-              <a
-                href="#"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                class="btn btn-primary"
-                style="margin-top: 1.5rem"
-                >Get Started</a
-              >
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;" class="btn btn-primary">
+                Get Started
+              </a>
             </article>
-            <article
-              class="service-card glass-panel interactive text-center"
-              style="flex: 1 1 300px"
-            >
+            <article class="pricing-card">
               <h3>Enterprise Multi-Venue</h3>
-              <p
-                class="lead"
-                style="
-                  font-size: 2rem;
-                  color: var(--tertiary);
-                  font-weight: 800;
-                  margin: 1rem 0;
-                "
-              >
-                Custom Quote
-              </p>
-              <ul class="feature-list" style="text-align: left">
+              <div class="pricing-amount">Custom</div>
+              <ul class="feature-list">
                 <li>Unlimited sq ft</li>
                 <li>Multiple Location Scaling</li>
                 <li>White-Glove Service</li>
                 <li>API Integration</li>
               </ul>
-              <a
-                href="#"
-                onclick="
-                  Calendly.initPopupWidget({
-                    url: 'https://calendly.com/thedigitaluproar',
-                  });
-                  return false;
-                "
-                class="btn btn-outline"
-                style="margin-top: 1.5rem"
-                >Contact Us</a
-              >
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;" class="btn btn-outline">
+                Contact Us
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- About Section -->
-      <section class="about" id="about">
+      <!-- About -->
+      <section id="about" style="border-top: 1px solid var(--border);">
         <div class="container">
-          <div class="about-grid">
-            <div
-              class="about-content glass-panel"
-              style="max-width: 800px; margin: 0 auto"
-            >
-              <h2 class="section-title text-center">About Us</h2>
-              <p class="lead text-center">
-                The Digital UpRoar is a boutique digital agency for brands that
-                want to be seen, explored, and remembered.
-              </p>
-              <p>
-                Founded by Ruben Cepeda, we specialize in immersive virtual
-                tours, dynamic video content, and smart digital tools — built
-                for the businesses that can't afford to be invisible online.
-              </p>
-              <p>
-                We've earned preferred vendor status with TAO Group Hospitality
-                and 50 Eggs Hospitality, and our work spans nightlife venues,
-                hotel properties, hospitals, event centers, and government
-                offices from New York City to Austin, Texas.
-              </p>
-              <p
-                style="
-                  font-weight: 600;
-                  margin-top: 1.5rem;
-                  text-align: center;
-                  color: var(--primary);
-                "
-              >
-                No bundles. No bloat. Just the service you need, done right.
-              </p>
-            </div>
+          <div class="about-content text-center">
+            <span class="section-label">About</span>
+            <h2 class="section-title">Built for Brands That Refuse to Be Invisible</h2>
+            <p class="lead">
+              The Digital UpRoar is a boutique digital agency for brands that want to be seen, explored, and remembered.
+            </p>
+            <p>
+              Founded by Ruben Cepeda, we specialize in immersive virtual tours, dynamic video content, and smart digital tools -- built for the businesses that can't afford to be invisible online.
+            </p>
+            <p>
+              We've earned preferred vendor status with TAO Group Hospitality and 50 Eggs Hospitality, and our work spans nightlife venues, hotel properties, hospitals, event centers, and government offices from New York City to Austin, Texas.
+            </p>
+            <p class="about-tagline">
+              No bundles. No bloat. Just the service you need, done right.
+            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Contact & Footer -->
+    <!-- Footer -->
     <footer class="contact" id="contact">
-      <div class="container footer-content glass-panel text-center">
-        <h2 class="section-title">Ready to Make an Uproar?</h2>
-        <p>
-          Get in touch today to learn more about how we can help your brand!
-        </p>
-        <div class="contact-links">
-          <a
-            href="#"
-            onclick="
-              Calendly.initPopupWidget({
-                url: 'https://calendly.com/thedigitaluproar',
-              });
-              return false;
-            "
-            class="btn btn-primary lg"
-            >Book A Call</a
-          >
-          <a href="mailto:rc@thedigitaluproar.com" class="btn btn-outline lg"
-            >Email Us</a
-          >
-        </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; <span id="current-year">2026</span> The Digital UpRoar. All
-            rights reserved.
-          </p>
+      <div class="container">
+        <div class="footer-inner">
+          <h2>Ready to Make an Uproar?</h2>
+          <p>Get in touch today to learn more about how we can help your brand.</p>
+          <div class="contact-links">
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thedigitaluproar'}); return false;" class="btn btn-primary lg">
+              Book A Call
+            </a>
+            <a href="mailto:rc@thedigitaluproar.com" class="btn btn-outline lg">Email Us</a>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> The Digital UpRoar. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- Tidio Live Chat Script (Placeholder/Free Tier) -->
-    <script src="//code.tidio.co/YOUR_TIDIO_CODE.js" async></script>
     <script src="script.js"></script>
   </body>
 </html>
